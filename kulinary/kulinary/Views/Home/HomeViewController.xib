@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="kulinary" customModuleProvider="target">
+            <connections>
+                <outlet property="deskripsiTF" destination="7Sv-hs-f4g" id="R1W-9D-q2Z"/>
+                <outlet property="menuAndalanTF" destination="QY0-Sp-uFi" id="i8A-ot-Hjb"/>
+                <outlet property="namaRestoranTF" destination="3vf-F7-Om5" id="bl8-Pl-7xM"/>
+                <outlet property="ratingTF" destination="ttM-j0-u2F" id="EXj-8M-rfw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masukan reviewmu!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o92-sv-ldX">
+                    <rect key="frame" x="16" y="60" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="by9-pR-FfD">
+                    <rect key="frame" x="16" y="96.5" width="382" height="196"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nama Restoran" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3vf-F7-Om5">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Deskripsi" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7Sv-hs-f4g">
+                            <rect key="frame" x="0.0" y="54" width="382" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Menu Andalan" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-Sp-uFi">
+                            <rect key="frame" x="0.0" y="108" width="382" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rating" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ttM-j0-u2F">
+                            <rect key="frame" x="0.0" y="162" width="382" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ1-7U-Rrd">
+                    <rect key="frame" x="20" y="432.5" width="374" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Pergi ke halaman Review!"/>
+                    <connections>
+                        <action selector="didTapReview:" destination="-1" eventType="touchUpInside" id="xRv-aJ-Nhs"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="LQ2-nJ-ijI">
+                    <rect key="frame" x="20" y="811" width="374" height="31"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-pt-sNM">
+                            <rect key="frame" x="0.0" y="0.0" width="107.5" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Image"/>
+                            <connections>
+                                <action selector="didTapImage:" destination="-1" eventType="touchUpInside" id="2Xh-Ku-ESg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSb-5W-iNm">
+                            <rect key="frame" x="133.5" y="0.0" width="107" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Video"/>
+                            <connections>
+                                <action selector="didTapVideo:" destination="-1" eventType="touchUpInside" id="Kjk-Zy-pwL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIw-9x-gpq">
+                            <rect key="frame" x="266.5" y="0.0" width="107.5" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="PDF"/>
+                            <connections>
+                                <action selector="didTapPdf:" destination="-1" eventType="touchUpInside" id="3an-UT-ApP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Media" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiE-WA-uau">
+                    <rect key="frame" x="20" y="770.5" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9d-Ck-Boc">
+                    <rect key="frame" x="150" y="312.5" width="114" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                    <connections>
+                        <action selector="didTapSubmit:" destination="-1" eventType="touchUpInside" id="XEd-HP-SW4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mZ1-7U-Rrd" secondAttribute="trailing" constant="20" id="0iW-ls-2e7"/>
+                <constraint firstItem="o92-sv-ldX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="3b7-b2-Jrg"/>
+                <constraint firstItem="P9d-Ck-Boc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="150" id="6ux-hh-h8u"/>
+                <constraint firstItem="P9d-Ck-Boc" firstAttribute="top" secondItem="by9-pR-FfD" secondAttribute="bottom" constant="20" id="8Jd-7L-rXq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fiE-WA-uau" secondAttribute="trailing" constant="20" id="Aip-mc-w3S"/>
+                <constraint firstItem="mZ1-7U-Rrd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GZx-VZ-75R"/>
+                <constraint firstItem="o92-sv-ldX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Gi5-0t-qhe"/>
+                <constraint firstItem="fiE-WA-uau" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="KeM-gs-TI3"/>
+                <constraint firstItem="LQ2-nJ-ijI" firstAttribute="top" secondItem="fiE-WA-uau" secondAttribute="bottom" constant="20" id="QHg-ZJ-r3f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P9d-Ck-Boc" secondAttribute="trailing" constant="150" id="Rao-p7-VVi"/>
+                <constraint firstItem="by9-pR-FfD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="T10-nK-I6V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o92-sv-ldX" secondAttribute="trailing" constant="16" id="Vcz-G1-nCj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LQ2-nJ-ijI" secondAttribute="trailing" constant="20" id="ccY-vM-82K"/>
+                <constraint firstItem="LQ2-nJ-ijI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ePg-Pq-Rzp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LQ2-nJ-ijI" secondAttribute="bottom" constant="20" id="hIk-1g-pEw"/>
+                <constraint firstItem="mZ1-7U-Rrd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jLb-1w-TSi"/>
+                <constraint firstItem="by9-pR-FfD" firstAttribute="top" secondItem="o92-sv-ldX" secondAttribute="bottom" constant="16" id="lpI-tO-MDJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="by9-pR-FfD" secondAttribute="trailing" constant="16" id="peR-Vu-XOb"/>
+                <constraint firstItem="mZ1-7U-Rrd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yaA-6E-ZhO"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

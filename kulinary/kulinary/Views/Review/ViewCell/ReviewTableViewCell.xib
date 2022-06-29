@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="ReviewTableViewCell" customModule="kulinary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Yo-6e-jVT">
+                        <rect key="frame" x="16" y="0.0" width="288" height="119"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Restoran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8On-tp-OvL">
+                                <rect key="frame" x="8" y="8" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deskripsi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOf-0F-tmo">
+                                <rect key="frame" x="8" y="37" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu Andalan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yce-f7-inC">
+                                <rect key="frame" x="8" y="66" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYB-oA-luV">
+                                <rect key="frame" x="8" y="95" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rYB-oA-luV" firstAttribute="leading" secondItem="1Yo-6e-jVT" secondAttribute="leading" constant="8" id="15J-H0-X3s"/>
+                            <constraint firstItem="yce-f7-inC" firstAttribute="leading" secondItem="1Yo-6e-jVT" secondAttribute="leading" constant="8" id="3z3-Cp-NYr"/>
+                            <constraint firstAttribute="height" constant="119" id="6ff-su-thh"/>
+                            <constraint firstItem="8On-tp-OvL" firstAttribute="top" secondItem="1Yo-6e-jVT" secondAttribute="top" constant="8" id="9BZ-54-6oZ"/>
+                            <constraint firstAttribute="trailing" secondItem="rYB-oA-luV" secondAttribute="trailing" constant="8" id="9d6-cW-qDG"/>
+                            <constraint firstAttribute="trailing" secondItem="8On-tp-OvL" secondAttribute="trailing" constant="8" id="Ex5-29-QTg"/>
+                            <constraint firstAttribute="trailing" secondItem="yce-f7-inC" secondAttribute="trailing" constant="8" id="GEc-mi-nsy"/>
+                            <constraint firstAttribute="trailing" secondItem="YOf-0F-tmo" secondAttribute="trailing" constant="8" id="NLg-vy-wz7"/>
+                            <constraint firstItem="yce-f7-inC" firstAttribute="top" secondItem="YOf-0F-tmo" secondAttribute="bottom" constant="8" id="Pt5-NP-jk3"/>
+                            <constraint firstItem="rYB-oA-luV" firstAttribute="top" secondItem="yce-f7-inC" secondAttribute="bottom" constant="8" id="cbW-ex-vNl"/>
+                            <constraint firstItem="8On-tp-OvL" firstAttribute="leading" secondItem="1Yo-6e-jVT" secondAttribute="leading" constant="8" id="koy-2e-5EE"/>
+                            <constraint firstItem="YOf-0F-tmo" firstAttribute="leading" secondItem="1Yo-6e-jVT" secondAttribute="leading" constant="8" id="meE-cs-Mh0"/>
+                            <constraint firstItem="YOf-0F-tmo" firstAttribute="top" secondItem="8On-tp-OvL" secondAttribute="bottom" constant="8" id="oU6-qH-NEz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Yo-6e-jVT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="IPd-AT-Dm2"/>
+                    <constraint firstItem="1Yo-6e-jVT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OcO-kP-e61"/>
+                    <constraint firstAttribute="trailing" secondItem="1Yo-6e-jVT" secondAttribute="trailing" constant="16" id="lHg-Ky-2K1"/>
+                    <constraint firstAttribute="bottom" secondItem="1Yo-6e-jVT" secondAttribute="bottom" id="waP-vf-MZr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="deskripsiLabel" destination="YOf-0F-tmo" id="Mwu-OR-YRy"/>
+                <outlet property="menuAndalanLabel" destination="yce-f7-inC" id="Ww6-nh-yCY"/>
+                <outlet property="namaRestoranLabel" destination="8On-tp-OvL" id="035-Xb-MzR"/>
+                <outlet property="ratingLabel" destination="rYB-oA-luV" id="JrM-wl-iJu"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="151.00446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
